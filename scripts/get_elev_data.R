@@ -17,8 +17,8 @@ ele11<-ele%>%
   subset(utm.z=="11U")
 
 #define coordinates
-coordinates(ele10) <- ele10[, c('utm.e', 'utm.n')]
-coordinates(ele11) <- ele11[, c('utm.e', 'utm.n')]
+coordinates(ele10) <- ele10[, c('utm.n', 'utm.e')]
+coordinates(ele11) <- ele11[, c('utm.n', 'utm.e')]
 
 #assign crs project
 proj4string(ele10) <- CRS('+proj=utm +zone=10 +datum=WGS84')
